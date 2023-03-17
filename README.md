@@ -11,6 +11,7 @@ Your task is to create a form with an input field and a submit button. When the 
 3. Create a react form which outputs whether the user input is a palendrome or not.
 
 ## Solution Explanation
+
 In the solution, we start by importing the necessary React components and hooks. We define two state variables, word to store the user input, and result to store the result of the palindrome check.
 
 The handleChange function is called when the input value changes. It updates the word state variable with the new value.
@@ -21,7 +22,7 @@ The handleSubmit function is called when the user submits the form. It prevents 
 
 ## Additional Challenge
 
-Refactor the component to be a controlled form which displays the "This is a palindrome" or "This is NOT a palindrome" message as the user types.
+Refactor the component to output the "This is a palendrome" or "This is not a palendrome" as the user types.
 
 ## Available Scripts
 

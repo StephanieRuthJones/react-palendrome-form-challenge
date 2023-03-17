@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function App() {
   const [word, setWord] = useState("");
@@ -13,24 +13,20 @@ function App() {
     return word.toLowerCase() === reversedWord.toLowerCase();
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  useEffect(() => {
     if (isPalindrome(word)) {
       setResult("This is a palindrome");
     } else {
       setResult("This is NOT a palindrome");
     }
-  };
+  }, [word]);
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Enter a word:
-          <input type="text" value={word} onChange={handleChange} />
-        </label>
-        <button type="submit">Check</button>
-      </form>
+      <label>
+        Enter a word:
+        <input type="text" value={word} onChange={handleChange} />
+      </label>
       <p>{result}</p>
     </div>
   );

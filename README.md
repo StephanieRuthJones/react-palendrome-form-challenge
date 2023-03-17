@@ -9,3 +9,19 @@ Your task is to create a form with an input field and a submit button. When the 
 1. Fork this repo
 2. Clone your forked repo
 3. Create a react form which outputs whether the user input is a palendrome or not.
+
+## Additional Challenge
+
+Refactor the component to be a controlled form which displays the "This is a palindrome" or "This is NOT a palindrome" message as the user types.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
